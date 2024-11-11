@@ -1,0 +1,29 @@
+Su empresa se dedica a recibir dispositivos para repararlos. En algunos casos, no
+se puede reparar y deben solicitar un dispositivo nuevo. Cuentan con una base de
+datos muy grande donde se registra el estado de cada componente del dispositivo,
+y un dato final indicando si pudo repararse o si fue necesario solicitar un dispostivo
+nuevo.
+Le solicitan que haga y entrene un modelo con esos datos, para que al final se
+ingresen los datos de los componentes, y muestre una predicción indicando si el
+dispostivo puede repararse, o si debe solicitarse uno nuevo.
+Responda a las siguientes preguntas:
+• ¿Qué tipo de modelo aplicaría?
+  R// Arboles de decisión , debido a su capacidad para manejar datos tabulares y para trabajar con una gran cantidad de variables que representan componentes de un dispositivo.
+      Ya que
+
+• ¿Por qué consideras que ese modelo es adecuado?
+  R//Permiten clasificar el dispositivo basándose en un gran número de características, son interpretables, 
+     lo cual es una ventaja para entender la importancia de cada componente en la predicción final. Además, estos modelos suelen tener buena capacidad para evitar el sobreajuste en datos grandes.
+
+Ahora ha aplicado algunos algoritmos de machine learning en datos:
+• ¿De qué manera considera que es diferente a la programación regular, para
+este tipo de proyectos?
+  R//La programación tradicional sigue reglas explícitas y deterministas: se le dice al sistema qué hacer en cada caso, 
+     basándose en condiciones y reglas establecidas de antemano. En cambio, el Machine Learning implica que el sistema “aprende” patrones y relaciones dentro de los datos.   
+     Esto significa que el modelo no sigue reglas explícitas predefinidas, sino que generaliza a partir de ejemplos previos para predecir nuevos resultados. 
+     La diferencia clave es que, en lugar de definir cómo tomar decisiones, los algoritmos aprenden a tomarlas con base en patrones detectados en los datos de entrenamiento.
+• ¿Por qué cree que los modelos como los vistos en las clases no logran llegar
+a un 100% de respuestas correctas?
+Limitaciones en la información: A veces, los datos disponibles no capturan toda la complejidad del problema. Por ejemplo, algunos componentes clave para determinar si un dispositivo es reparable podrían no estar registrados en la base de datos.
+Incertidumbre inherente: Puede haber variabilidad en los dispositivos y sus fallas, lo cual genera casos atípicos o excepciones difíciles de generalizar para el modelo.
+Sobreajuste o subajuste: El modelo podría sobreajustarse al ruido específico de los datos de entrenamiento o no ajustarse adecuadamente si no es lo suficientemente complejo, lo que lleva a errores en la predicción.
